@@ -43,7 +43,6 @@
       gap: 1px;
 
       .hero__slide {
-        width: 380px;
         flex: 0 0 50%; /* Each slide takes half of the slider's width */
         display: grid;
         grid-template-columns: 1fr;
