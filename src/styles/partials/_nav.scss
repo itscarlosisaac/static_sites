@@ -1,0 +1,24 @@
+.nav__inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__trigger {
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-body);
+    .nav__trigger--text {
+        line-height: 24px;
+        display: none;
+        @media screen and (min-width: $sm) {
+            display: block;
+        }
+    }
+}
+

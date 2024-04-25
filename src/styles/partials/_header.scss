@@ -1,0 +1,41 @@
+.header__wrapper {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+
+    .header__inner {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+
+        @media screen and (min-width: $sm) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #search {
+            display: none;
+            @media screen and (min-width: $sm) {
+                display: block;
+            }
+        }
+
+        .header__logo {
+            h3 {
+                display: block;
+                font-family: "Quicksand", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-weight: 500;
+                color: #6c757d;
+
+                strong {
+                    color: #434e58;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,26 @@
+#hero
+    .hero__container
+        .hero__next.hero__nav.soft__shadow
+            span.material-symbols-outlined arrow_forward_ios
+        .hero__prev.hero__nav.soft__shadow
+            span.material-symbols-outlined arrow_back_ios
+        .hero__slides
+            .hero__track
+                each slide in book_list
+                    .hero__slide(style=`--bg-color:${slide.color};`)
+                        picture.hero__image
+                            img(src=slide.cover alt=slide.alt)
+                        .hero__content
+                            h1.hero__title #{slide.title}
+                            h4.hero__author #{slide.author}
+                            div.hero__rating
+                                - var n = 0;
+                                while n < slide.rating
+                                    span.material-symbols-outlined.star.filled star
+                                    - n++;
+                                while n < 5
+                                    span.material-symbols-outlined.star.empty star
+                                    - n++;
+                            p.hero__description #{slide.excerpt}
+                            button.hero__button.soft__shadow
+                                span See The Book

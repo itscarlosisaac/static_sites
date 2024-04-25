@@ -1,0 +1,30 @@
+#content
+    .genres
+        h3 Popular by Genres
+        div
+            ul.list__genre
+                each genre in genre_list
+                    li.item__genre #{genre}
+    .list__book
+        each book in book_list
+            article.item__book
+                picture.image
+                    img.avatar__img(src=book.cover alt=book.author)
+                header
+                    h3.title #{book.title}
+                    p.author by #{book.author}
+
+                    div.rating
+                        - var n = 0;
+                        while n < book.rating
+                            span.material-symbols-outlined.star.filled star
+                            - n++;
+                        while n < 5
+                            span.material-symbols-outlined.star.empty star
+                            - n++;
+                    p.excerpt #{book.excerpt}
+                footer.footer
+                    p
+                        picture.avatar.small
+                            img(src="https://avatar.iran.liara.run/public" alt=book.author)
+                        span Samantha jones likes this

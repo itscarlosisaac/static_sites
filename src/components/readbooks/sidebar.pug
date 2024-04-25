@@ -1,0 +1,21 @@
+
+aside#sidebar
+    article.section__author-of-week
+        h3 Authors of the week
+        ul.list__author-of-week
+            each author in author_list
+                li.item__author-of-week
+                    picture.avatar.soft__shadow
+                        img.avatar__img(src=author.avatar alt=author.name)
+                    span.author #{author.name}
+
+    article.section__book-of-year
+        h3 Books of the year
+        ul.list__book-of-year
+            each book in book_list
+                li.item__book-of-year
+                    picture.avatar.soft__shadow
+                        img.avatar__img(src=book.cover alt=book.name)
+                    p
+                        span.title #{book.title}
+                        span.author by #{book.author}

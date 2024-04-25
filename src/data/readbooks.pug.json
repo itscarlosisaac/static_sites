@@ -1,0 +1,57 @@
+{
+	"genre_list": ["All", "Business", "Science", "Fiction", "Biography"],
+	"author_list": [
+		{ "name": "John Doe", "avatar": "https://avatar.iran.liara.run/public" },
+		{ "name": "John Doe", "avatar": "https://avatar.iran.liara.run/public" },
+		{ "name": "John Doe", "avatar": "https://avatar.iran.liara.run/public" },
+		{ "name": "John Doe", "avatar": "https://avatar.iran.liara.run/public" },
+		{ "name": "John Doe", "avatar": "https://avatar.iran.liara.run/public" }
+	],
+	"book_list": [
+		{
+			"author": "Harper Lee",
+			"title": "To Kill a Mockingbird",
+			"year": 1960,
+			"excerpt": "A novel about the childhood observations of a young girl named Scout, whose father, a lawyer, is appointed to defend a black man accused of rape.",
+			"cover": "https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+			"rating": 3,
+			"color": "#EDB9D6"
+		},
+		{
+			"author": "George Orwell",
+			"title": "1984",
+			"year": 1949,
+			"excerpt": "A dystopian novel set in a totalitarian regime of the future, where the truth is what the government says it is, and thoughts are policed.",
+			"cover": "https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+			"rating": 2,
+			"color": "#91D4E1"
+		},
+		{
+			"author": "Jane Austen",
+			"title": "Pride and Prejudice",
+			"year": 1813,
+			"excerpt": "A romantic novel of manners that explores the character of Elizabeth Bennet, intelligent and witty, and her relationship with the enigmatic Mr. Darcy.",
+			"cover": "https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+			"rating": 5,
+			"color": "#FBADAF"
+		},
+		{
+			"author": "F. Scott Fitzgerald",
+			"title": "The Great Gatsby",
+			"year": 1925,
+			"excerpt": "A novel set in the Jazz Age on Long Island, near New York City, it is a critique of the American Dream.",
+			"cover": "https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+			"rating": 4,
+			"color": "#efbc5f"
+		},
+		{
+			"author": "J.R.R. Tolkien",
+			"title": "The Hobbit",
+			"year": 1937,
+			"excerpt": "The prelude to the Lord of the Rings, The Hobbit follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon.",
+			"cover": "https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+			"rating": 1,
+			"color": "#83c483"
+		}
+	]
+}
