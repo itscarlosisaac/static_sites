@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		const should_hide = current_index === total_slides - 2;
 		next_button.style.display = should_hide ? "none" : "flex";
 		prev_button.style.display = current_index === -1 ? "none" : "flex";
-		console.log("Current index: ", current_index);
 	}
 	
 	window.addEventListener('resize', function () {
