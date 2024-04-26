@@ -10,6 +10,10 @@
 @import 'partials/_content.scss';
 @import 'partials/_hero.scss';
 
+// Homepage
+@import 'partials/home/_home.scss';
+@import 'partials/home/_cards.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {

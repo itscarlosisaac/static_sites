@@ -1,8 +1,25 @@
 extends ../layout/head.pug
+
+append global_variables
+    - var pageTitle = "Static Sites | Playground for Vite Pug/Scss"
+
+append head_styles
+    link(rel="stylesheet" href="src/styles/main.scss")
+
 block content
-    header
-        h1 About Us
-    main
-        p This is the about page content.
-    footer
-        p © 2024 Company Name
+    #home.content__wrapper
+        main.container
+            .cards
+                .glass__card
+                    h3.card__title
+                        .readbooks__logo
+                            h3 read
+                                strong books
+                    p.card__description Static site for books
+                    a.card__link(href="/readbooks.html") See Site
+
+        footer.footer
+            div.dino
+                p.card__bubble Cooking more soon
+                picture
+                    img(src="https://www.itscarlosisaac.com/deno.png" alt="Deno Logo" width="100px")

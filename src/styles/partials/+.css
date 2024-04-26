@@ -8,3 +8,4 @@
 @import "_shadows.scss";
 @import "_sidebar.scss";
 @import "_text.scss";
+@import "home/+.css";
