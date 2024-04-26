@@ -6,7 +6,6 @@ function replaceStringInHtml(htmlContent, targetString, replacementString) {
 	// Replace all instances of targetString with replacementString
 	return htmlContent.replace(regex, replacementString);
 }
-
 function read_directory(path, manifest){
 	fs.readdir('./dist', (err, files) => {
 		files.forEach(file => {
@@ -34,5 +33,4 @@ function runPostBuildScript() {
 		}
 	};
 }
-
 export default runPostBuildScript;

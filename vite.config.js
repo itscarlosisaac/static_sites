@@ -2,17 +2,9 @@ import {defineConfig} from 'vite';
 import vituum from "vituum";
 import pug from '@vituum/vite-plugin-pug'
 import runPostBuildScript from './plugins/postBuild.js';
-
-function ignoreFilesPlugin() {
-	return {
-		name: 'ignore-files',
-		transform(code, id) {
-			if (id.endsWith('.scss') && id.includes('/_')) {
-				return {code: '', map: null};
-			}
-		}
-	};
-}
+import copyFiles from "./plugins/copyPublic.js";
+import transformCss from "./plugins/fixCSSUrls.js";
+import ignoreFilesPlugin from "./ignoreFiles.js";
 
 const pug_plugins = [
 	vituum(), pug({
@@ -23,9 +15,17 @@ const pug_plugins = [
 		},
 	})
 ]
+
 export default defineConfig({
-	plugins: [...pug_plugins, ignoreFilesPlugin(), runPostBuildScript()],
+	plugins: [
+		...pug_plugins,
+		ignoreFilesPlugin(),
+		runPostBuildScript(),
+		copyFiles('public', 'dist/assets/images', true),
+		transformCss(),
+	],
 	build: {
+		copyPublicDir: false,
 		manifest: true,
 		outDir: "dist",
 		emptyOutDir: true,
