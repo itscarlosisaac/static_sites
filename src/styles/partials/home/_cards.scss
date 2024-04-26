@@ -18,12 +18,11 @@
 
     .card__link {
       text-decoration: none;
-      color: #1e2164;
+      color: #ff5f35;
       padding: 4px 25px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 100px;
       display: inline-block;
-      background: #ffffff2e;
+      background: #ffffff;
       transition: box-shadow 0.5s ease;
       &:hover {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
