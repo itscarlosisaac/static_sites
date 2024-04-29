@@ -1,18 +1,7 @@
 import path from "path"
 import fs from "fs"
 
-function copyFilesPlugin(from, to, overwrite = false) {
-	return {
-		name: 'copy-files-plugin',
-		apply: 'build',
-		writeBundle() {
-			const log = msg => console.log('\x1b[36m%s\x1b[0m', msg)
-			log(`copy files: ${from} → ${to}`)
-			ReadDir(from, to, overwrite)
-			copyFilesPlugin.done = true
-		}
-	}
-}
+const log = msg => console.log('\x1b[36m%s\x1b[0m', msg)
 
 function ReadDir(from, to, overwrite){
 	fs.stat(to, async (err, stats) => {
@@ -44,6 +33,18 @@ function Copy(from, to, overwrite){
 			)
 		}
 	})
+}
+
+function copyFilesPlugin(from, to, overwrite = false) {
+	return {
+		name: 'copy-files-plugin',
+		apply: 'build',
+		writeBundle() {
+			log(`copy files: ${from} → ${to}`)
+			ReadDir(from, to, overwrite)
+			copyFilesPlugin.done = true
+		}
+	}
 }
 
 copyFilesPlugin.done = false
