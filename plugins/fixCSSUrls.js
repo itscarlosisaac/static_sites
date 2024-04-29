@@ -1,4 +1,4 @@
-import copyFiles from "./copyPublic.js";
+import copyFilesPlugin from "./copyPublic.js";
 import fs from "fs";
 
 function prefixCssUrls(cssContent, prefix) {
@@ -19,7 +19,7 @@ function transformCss(){
 		writeBundle() {
 			return new Promise((resolve) => {
 				const interval = setInterval(() => {
-					if (copyFiles.done) {
+					if (copyFilesPlugin.done) {
 						clearInterval(interval);
 						fs.readdirSync("dist/assets/css").forEach(file => {
 							if( !file.endsWith('.css') ) return;

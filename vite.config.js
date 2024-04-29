@@ -2,7 +2,7 @@ import {defineConfig} from 'vite';
 import vituum from "vituum";
 import pug from '@vituum/vite-plugin-pug'
 import runPostBuildScript from './plugins/postBuild.js';
-import copyFiles from "./plugins/copyPublic.js";
+import copyFilesPlugin from "./plugins/copyPublic.js";
 import transformCss from "./plugins/fixCSSUrls.js";
 import ignoreFilesPlugin from "./ignoreFiles.js";
 
@@ -21,7 +21,7 @@ export default defineConfig({
 		...pug_plugins,
 		ignoreFilesPlugin(),
 		runPostBuildScript(),
-		copyFiles('public', 'dist/assets/images', true),
+		copyFilesPlugin('public', 'dist/assets/images', true),
 		transformCss(),
 	],
 	build: {
