@@ -1,0 +1,90 @@
+.discover__hero {
+    min-height: 720px;
+    background: url('/discover/hero.jpg') no-repeat center center/cover;
+}
+
+.discover__countries {
+    position: relative;
+    z-index: 10;
+    padding: 40px 0;
+    margin-top: -50%;
+    @media screen and (min-width: $md) {
+        margin-top: -250px
+    }
+
+    .country__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 0;
+        list-style: none;
+        margin: 0;
+        @media screen and (min-width: $md) {
+            grid-template-columns: 32% 32% 32%;
+            gap: 2%;
+        }
+        .country__item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px 0 20px 0;
+            background: white;
+            border-bottom: 8px solid var(--country-color);
+            position: relative;
+            .image {
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 100px;
+                margin: 0 auto;
+            }
+            .country__info {
+                padding: 14px 40px;
+                text-align: center;
+                .country__city {
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 1.6em;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    margin: 0;
+                    line-height: 1;
+                }
+                .country__name {
+                    font-size: 4em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    line-height: 1;
+                    font-weight: 800;
+                    color: var(--country-color);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .country__description {
+                    font-size: 1em;
+                    max-height: 4.5em;
+                    overflow: hidden;
+                }
+                .country_specs{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    gap: 40px;
+                    .country__spec {
+                        display: flex;
+                        flex-direction: column;
+                        &-title {
+                            font-size: 1em;
+                            letter-spacing: 0.3px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color:var(--text-heading)
+                        }
+                        &-text {
+                            font-weight: 900;
+                            color: var(--country-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

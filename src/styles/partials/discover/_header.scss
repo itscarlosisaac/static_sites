@@ -1,0 +1,50 @@
+.discover__header {
+    padding: 20px 0 80px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .header__nav {
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: $md) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            li {
+                text-align: center;
+                font-size: 14px;
+                @media screen and (min-width: $lg) {
+                    font-size: 1em;
+                }
+                a {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        color: $discover_secondary;
+                    }
+                }
+            }
+            .header__logo {
+                order: -1;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                max-width: 200px;
+                display: grid;
+                margin: 0 auto;
+                @media screen and (min-width: $md) {
+                    grid-column-end: auto;
+                    grid-column-start: auto;
+                    order: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.discover__experience__wrapper {
+  background: url("/discover/experience_image.jpg") center center / cover;
+  padding: 40px 0;
+  margin: 40px 0;
+  .discover__experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    @media screen  and (min-width: $md){
+      grid-template-columns: 300px 1fr;
+    }
+    @media screen  and (min-width: $lg){
+      grid-template-columns: 400px 620px;
+    }
+    .discover__rating__header {
+      h2 {
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1;
+        margin: 0;
+      }
+      .discover__rating {
+        height: 20px;
+        margin: 10px 0 0;
+        padding: 0;
+        span{
+          font-size: 14px;
+        }
+        .filled {
+          color: chocolate;
+        }
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 6.5em;
+        color: white;
+        line-height: 1;
+        margin: 0;
+        font-weight: 900;
+      }
+    }
+    .discover__experiences {
+      padding: 0 0 0 10px;
+      background: white;
+      .discover__experience__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        .discover__experience__item {
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          gap: 20px;
+          border-right: 2px solid var(--ex-color);
+          padding-right: 10px;
+          padding-top: 10px;
+
+          @media screen  and (min-width: $md){
+            grid-template-columns: 210px 1fr;
+          }
+          &:first-child {
+            padding-top: 10px;
+          }
+          &:last-child {
+            padding-bottom: 10px;
+          }
+
+          // Active state of the experience
+          &[data-expanded=true] {
+            .discover__experience__item--details {
+              display: block;
+              .discover__experience--meta {
+                display: flex;
+              }
+              p {
+                height: auto;
+              }
+            }
+          }
+
+          &--thumbnail {
+            height: 100%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          &--details {
+            header {
+              position: relative;
+              h3 {
+                font-size: 2em;
+                line-height: 1;
+                margin-bottom: 10px;
+              }
+              .price {
+                font-size: 1.1em;
+                font-weight: 700;
+                margin-bottom: 10px;
+                background: var(--ex-color);
+                padding: 10px;
+                position: absolute;
+                right: -10px;
+                top: 0;
+                color: white;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                line-height: 1;
+
+              }
+              .discover__experience--meta {
+                display: none;
+                gap: 10px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                margin-bottom: 10px;
+                span{
+                  border-right: 1px solid rgba(128, 128, 128, 0.11);
+                  padding-right: 10px;
+                  &:nth-child(1) { color: $discover_green; }
+                  &:nth-child(2) { color: $discover_secondary; }
+                  &:nth-child(3) { color: $discover_dark_orange; }
+                  &:last-child {
+                    border-right: none;
+                    padding-right: 0;
+                  }
+                }
+              }
+            }
+            p {
+              font-size: 1em;
+              line-height: 1.5em; /* Height of each line */
+              height: 3em; /* Line height x number of lines */
+              text-overflow: ellipsis;
+              overflow: hidden;
+              margin-top: 0;
+              transition: height 0.5s ease-out;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+	"discover_experiences": [
+		{
+			"title": "Val di Funes",
+			"date": "March 20",
+			"days": 14,
+			"spots": 3,
+			"details": "Val di Funes is a stunningly picturesque valley located in the Dolomites of Northern Italy, known for its breathtaking landscapes that blend lush green meadows with dramatic mountain peaks. This area is famous for its photogenic views, especially the iconic vistas of the jagged Odle (Geisler) peaks, which serve as a striking backdrop to the charming St. Magdalena church.",
+			"price": 1240,
+			"image": "https://via.placeholder.com/210",
+			"color": "#9AD1E5"
+		},
+		{
+			"title": "Bogliasco",
+			"date": "March 22",
+			"days": 14,
+			"spots": 3,
+			"details": "Bogliasco is a quaint coastal village located on the Italian Riviera, not far from the city of Genoa. This hidden gem is nestled between rugged cliffs and the azure Ligurian Sea, characterized by its picturesque beauty and a serene atmosphere that captures the essence of coastal Italian life. The village's charm is amplified by its colorful houses, small beaches, and the gently winding streets that invite leisurely strolls. Bogliasco is also a cultural hub, with its foundation dedicated to the arts, attracting scholars and artists from around the world to reside and work there temporarily, enhancing its vibrant local scene.",
+			"price": 1400,
+			"image": "https://via.placeholder.com/210",
+			"color": "#C58093"
+		},
+		{
+			"title": "Tuscany",
+			"date": "March 24",
+			"days": 14,
+			"spots": 3,
+			"details": "Tuscany is perhaps one of the most renowned regions in Italy, celebrated for its influential art, history, and pastoral landscape. It stretches from the Apennines to the Tyrrhenian Sea, encompassing medieval towns, rolling vineyards, and olive groves. Cities like Florence, Siena, and Pisa house some of the world’s most recognized works of art and architectural masterpieces, including the Florence Cathedral and the Leaning Tower of Pisa. The Tuscan countryside is equally famed for its wines, particularly Chianti and Brunello di Montalcino. ",
+			"price": 1000,
+			"image": "https://via.placeholder.com/210",
+			"color": "#DCA852"
+		}
+	],
+	"discover_events": [
+		{
+			"title": "Carnival of Venice",
+			"date": "Sep 20 - Sep 25",
+			"image": "https://via.placeholder.com/210",
+			"details": "The Carnival of Venice is an annual festival held in Venice, Italy, known for its elaborate masks, costumes, and celebrations. The event is world-renowned for its vibrant and colorful displays, attracting visitors from around the globe. The Carnival is a time of revelry and merrymaking, with parades, masquerade balls, and other festivities taking place throughout the city. The tradition of the Carnival dates back to the 12th century, making it one of the oldest and most famous carnivals in the world.",
+			"color": "#9AD1E5"
+		},
+		{
+			"title": "Carnival of Venice",
+			"date": "Sep 20 - Sep 25",
+			"image": "https://via.placeholder.com/210",
+			"details": "The Carnival of Venice is an annual festival held in Venice, Italy, known for its elaborate masks, costumes, and celebrations. The event is world-renowned for its vibrant and colorful displays, attracting visitors from around the globe. The Carnival is a time of revelry and merrymaking, with parades, masquerade balls, and other festivities taking place throughout the city. The tradition of the Carnival dates back to the 12th century, making it one of the oldest and most famous carnivals in the world.",
+			"color": "#9AD1E5"
+		},
+		{
+			"title": "Carnival of Venice",
+			"date": "Sep 20 - Sep 25",
+			"image": "https://via.placeholder.com/210",
+			"details": "The Carnival of Venice is an annual festival held in Venice, Italy, known for its elaborate masks, costumes, and celebrations. The event is world-renowned for its vibrant and colorful displays, attracting visitors from around the globe. The Carnival is a time of revelry and merrymaking, with parades, masquerade balls, and other festivities taking place throughout the city. The tradition of the Carnival dates back to the 12th century, making it one of the oldest and most famous carnivals in the world.",
+			"color": "#9AD1E5"
+		}
+	],
+	"discover_countries": [
+		{
+			"name": "Italy",
+			"city": "Rome",
+			"description": "Rome, the capital of Italy, is a sprawling cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display. Ancient ruins such as the Roman Forum and the Colosseum evoke the power of the former Roman Empire. Vatican City, headquarters of the Roman Catholic Church, has St. Peter’s Basilica and the Vatican Museums, which house masterpieces such as Michelangelo’s Sistine Chapel frescoes.",
+			"image": "https://via.placeholder.com/210",
+			"difficulty": "Easy",
+			"departure": "March 20",
+			"color": "#9AD1E5"
+		},
+		{
+			"name": "Slovenia",
+			"city": "Ljubljana",
+			"description": "Ljubljana, the capital of Slovenia, is a charming city known for its vibrant cultural scene, green spaces, and architectural beauty. The city is characterized by its picturesque Old Town, which is home to historic buildings, cobblestone streets, and the iconic Ljubljana Castle perched on a hill overlooking the city. Ljubljana is also known for its lively outdoor markets, cafes, and restaurants, where visitors can sample local cuisine and enjoy the city's relaxed atmosphere.",
+			"image": "https://via.placeholder.com/210",
+			"difficulty": "Medium",
+			"departure": "March 20",
+			"color": "#DCA852"
+		},
+		{
+			"name": "Iceland",
+			"city": "Reykjavik",
+			"description": "Reykjavik, the capital of Iceland, is a vibrant city known for its stunning natural beauty, unique culture, and friendly locals. The city is surrounded by dramatic landscapes, including geothermal hot springs, volcanic mountains, and the rugged coastline of the North Atlantic Ocean. Reykjavik is also home to a thriving arts and music scene, with numerous galleries, museums, and live music venues to explore. Visitors can enjoy a range of outdoor activities, from hiking and horseback riding to whale watching and northern lights tours.",
+			"image": "https://via.placeholder.com/210",
+			"difficulty": "Easy",
+			"departure": "March 20",
+			"color": "#C58093"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+.discover__hero
+.discover__countries
+    .container
+        .country__list
+            each country in discover_countries
+                .country__item(style=`--country-color:${country.color};`)
+                    .country__image
+                        img(src=country.image alt=country.name)
+                    .country__info
+                        h4.country__city= country.city
+                        h3.country__name= country.name
+                        p.country__description= country.description
+                        .country_specs
+                            .country__spec
+                                span.country__spec-title Departure
+                                span.country__spec-text= country.departure
+                            .country__spec
+                                span.country__spec-title Difficulty
+                                span.country__spec-text= country.difficulty

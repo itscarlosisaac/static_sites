@@ -1,0 +1,27 @@
+.discover__experience__wrapper
+    .container
+        .discover__experience
+            .discover__rating__header
+                h2 Overall Rating
+                div.discover__rating
+                    span.material-symbols-outlined.star.filled star
+                    span.material-symbols-outlined.star.filled star
+                    span.material-symbols-outlined.star.filled star
+                    span.material-symbols-outlined.star.filled star
+                    span.material-symbols-outlined.star.empty star
+                h1 Italy
+            .discover__experiences
+                .discover__experience__list
+                    each experience, index in discover_experiences
+                        .discover__experience__item(data-expanded=index === 0 ? 'true' : 'false' style=`--ex-color:${experience.color};`)
+                            picture.discover__experience__item--thumbnail
+                                img(src=experience.image, alt='Experience Image')
+                            article.discover__experience__item--details
+                                header
+                                    h3 #{experience.title}
+                                    span.price $#{experience.price}
+                                    .discover__experience--meta
+                                        span #{experience.date}
+                                        span #{experience.days} days
+                                        span #{experience.spots} People left
+                                p #{experience.details}

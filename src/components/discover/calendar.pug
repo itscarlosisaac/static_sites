@@ -1,0 +1,19 @@
+.discover__calendar__wrapper
+    .container
+        header.discover__calendar__header
+            h2 Events Calendar
+            p lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        section.discover__calendar__carousel
+            .discover__prev
+                span.material-symbols-outlined chevron_left
+            .discover__calendar__track
+                each event, index in discover_events
+                    .discover__calendar__slide(data-position=index data-active=index === 0 ? 'true' : 'false'
+                        style=`--ev-color:${event.color};`)
+                        picture.thumbnail: img(src=event.image alt=event.title)
+                        p.tag Upcoming event
+                        p.date #{event.date}
+                        h3.title #{event.title}
+                        p.details #{event.details}
+            .discover__next
+                span.material-symbols-outlined chevron_right
